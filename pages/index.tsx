@@ -1,9 +1,11 @@
+import Box from "@mui/material/Box"
+
 const Home = () => {
   return (
-    <div className="app">
-      <h4>Helo</h4>
+      <Box sx={{background: '#000'}}>
+        <h4>Helo</h4>
+      </Box>
 
-    </div>
-  )
-}
+  );
+};
 export default Home;

@@ -1,9 +1,14 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
+import Container from "@mui/material/Container";
+import type { AppProps } from "next/app";
 
-import type { AppProps } from 'next/app';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
-  return <Component {...pageProps} />;
+  return (
+    <Container>
+      <Component {...pageProps} />
+    </Container>
+  );
 };
 
 export default MyApp;
