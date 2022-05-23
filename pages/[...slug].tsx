@@ -18,7 +18,9 @@ export const getServerSideProps = async (pageContext: {
     pageSlug,
   };
 
-  const trending = factory.createPage(variables.pageSlug[1], PageType.ListCurrencies)
+  const trending = factory.createPage(variables.pageSlug[0], PageType.ListCurrencies)
+
+
 
   const data = await trending.data();
 
