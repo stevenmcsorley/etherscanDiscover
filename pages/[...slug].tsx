@@ -46,9 +46,9 @@ const Crypto = (props: any) => {
       </Grid>
       <Grid item sx={{ background: "#17163B", height: "auto", p: 4 }} lg={10}>
         <Box sx={{ background: "#17163B", height: "100%"}}>
-          {data.map((d: any) => (
+          {data.map((d: any, index:number) => (
             <PriceBlock
-              key={d.key}
+              key={index}
               last7days={d.last7days}
               marketCap={d.marketCap}
               price={d.price}
